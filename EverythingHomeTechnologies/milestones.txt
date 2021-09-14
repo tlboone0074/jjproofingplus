@@ -1,0 +1,19 @@
+Milestones
+
+August 6th, 2021
+-Started Everything HOme & Technologies project 
+-created name of project
+-created nav menu in a class called showcase
+
+August 7th, 2021
+-created hover effect on nav menu
+-created image for red roof in paint 3D using a triangle shape and square shape.  I filled the color with red using the thickness properties.  Then added 2 straight
+-lines to make the A frame more realistic with a white color with a little opacity.
+
+-August 25th, client changed name of business from Everything Home And Technologies to JJP Roofing Plus.
+-august 26th  setup up client pay pal account with website for payment from his customers to make a payment towards JJP Roofing plus.
+-August 27th, was a challenge getting the two buttons on the home page positioned tailored for the client.  Finally got them corrected by modifying properties for the sorrounding elements.
+
+August 29th - completed contact and commercial page with media queries for responsive design.  
+-I realized that display: block aligned elements like h1-titles and help the page from having run on information. or the page not being formatted correctlyh.
+-August 30th.  project is 95% complete.  Constant feedback from client on updates oris client satisfied with progress of project.  Made a few changes to the website. 

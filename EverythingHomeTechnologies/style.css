@@ -1,0 +1,1206 @@
+/* global properties */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------------------------------------     INDEX PAGE    ---------------------------------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background: blue;
+}
+
+nav ul {
+    /* flex: 1; */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;  
+}
+
+nav ul li a {
+    width: 140px;
+    text-align: center;
+    text-transform: uppercase;   
+    text-decoration: none;
+    color: white;   
+    font-size: 17px;
+    line-height: 1.5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    transition: color 0.5s;
+    border: 1px solid rblue;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+nav ul li a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;    
+    transition: 0.5s;
+}
+
+nav ul li a:hover span {
+    width: 100%;
+}
+
+
+nav ul li a:hover  {
+    color: blue;
+}
+
+/* target the active page user is clicked on in red */
+ul .current a {
+    color: red;
+    font-weight: bold;
+}
+
+/*----------------------------------------- main logo title on the home page   ------------------------------------------ */
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    max-height: 150px;
+    
+    }
+    
+    .logo {
+    width: 500px;
+    
+    }
+
+    .logo-one {
+        min-height: 300px;
+        color: rblue;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        max-height: 150px;
+     }
+
+             
+    .logo-container strong {
+        font-size: 90px;
+        font-weight: bold;
+        font-style: italic;
+       
+    }
+
+      .logo-container span {
+         font-style:italic;
+         font-weight: bold;
+         font-size: 40px;        
+             }
+
+             .logo-container .logo-one .highlight{
+                text-decoration: underline;
+             }
+
+             .logo-one h1 {
+                 color: blue;
+             }
+
+         
+    .logo-two {
+        margin-top: 45px;
+        min-height: 400px;
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;  
+        max-height: 150px;
+    }
+
+    .logo-two .highlight {
+        color: black;
+        font-size: 22px;
+        font-style: italic;
+    }
+
+    .logo-two p {
+        font-weight: bold;
+        font-size: 25px;
+        
+    }
+
+
+    /* reference roof image on main page */
+    .roof-img {
+        margin-bottom: -150px;
+        margin-top: -6px;   
+        width: 100%;
+    }
+    
+    
+        .roof-img img {
+        width: 100%;
+        height: 400px;  
+        
+    }
+          
+
+        /* properties for buttons on roof image */
+
+        .roof-btn  {           
+            transition: 0.8s;
+            position: absolute;
+            margin: 40px auto;     
+        }
+        
+       .roof-btn a {
+
+            border: 1px solid white;
+            text-decoration: none;
+            padding: 45px 80px;
+            width: 300px;
+            height: 50px;
+            margin: 0 10px;
+            position: relative;
+            z-index: 1;
+            top: 150px;
+            left: 270px;
+            transition: color 0.5s;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+         .roof-btn a span {
+                width: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: white;
+                z-index: -1;    
+                transition: 0.5s;
+         }
+         
+        
+            .roof-btn a:hover span {
+                width: 100%;
+                opacity: -1;
+            }
+
+           
+            
+            .roof-btn a:hover   {
+                color: black;
+            }     
+
+
+        .roof-paragraph {
+            color: white;
+            background-color: blue;                      
+            margin: -5px auto;
+        }
+
+        .roof-paragraph p {
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        /*--------------------------- properties for banner image  and its contents and form on below*/
+
+        .banner-section {
+            background-color: blue;
+        }
+   
+        .banner-section img {
+            padding: 0 0 60px 0;
+            margin-top: 13px;
+            width: 100%;
+            height: 520px;
+            border-top: 3px solid blue;
+        }
+
+        .banner-section p {
+            /* width: 50%; */
+            max-width: 100%;
+            /* width: 90%; */
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* float: right; */
+            text-align: center;
+            border: 1px solid blue;
+            background-color: blue;
+            margin-top: -30px;
+            padding-bottom: 15px;
+            font-weight: bold;
+
+            /* text-align: center; */
+        }
+
+        .banner-container {
+            text-align: center;
+            color: #fff;
+            padding-top: 1px;           
+        }   
+
+        .content-highlight {
+            /* border: 3px solid blue; */
+            /* background-color: white; */
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .email-highlight a {
+            background-color: gray;
+            padding: 1px;
+            /* border: none; */
+            color: white;
+        }
+
+        /*------------------------------------    references the form within the banner   ---------------------------------*/
+
+.banner-section .inquiry {
+    margin: -60px 0 15px 0;
+    padding: 10px 10px 15px 10px;
+    background-color: blue;
+    display: block;
+    width: 100%;
+}
+
+.inquiry input {
+    display: inline-block;
+    width: 15%;
+    padding: 5px;
+    margin: 0 25px 0 35px;
+
+}
+
+.btn-send {
+    display: inline-block;
+    width: 15%;
+    padding: 5px; 
+    background-color: grey;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* references the content on the home page along with photo on the right side */
+
+#index-content {
+    width: 100%;
+    padding: 25px 0 40px 0;
+}
+.home-title h1 {
+    text-align: center;
+    color: blue;
+}
+
+.home-wrapper {
+    display: flex;
+    padding: 15px 0;
+}
+
+.home-content {
+    flex: 1;    
+    margin-right: 40px;    
+}
+
+.home-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.home-content:nth-child(1) {
+    margin-left: 20px;
+}
+
+/* targets the 2nd paragraph in the main content */
+.home-content:nth-child(2) {
+    font-size: 20px;
+}
+
+
+.home-content img {
+    width: 500px;
+    height: 300px;   
+}
+
+.home-content:last-child {
+    margin-right: 0;
+}
+
+/* --------------------------------------     ABOUT US PAGE ----- -------------------------------------------------------*/
+
+#aboutus-content {
+    padding: 0 0 10px 0;
+}
+
+.about-title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 0 10px 0;   
+
+}
+.about-img {
+    margin-bottom: -150px;
+    min-height: 400px;
+    margin-top: -6px;   
+    max-height: 470px;
+    width: 100%;
+}
+
+
+    .about-img img {
+    width: 100%;
+    max-height: 250px;
+    height: 175px;
+}
+
+.about-wrapper {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto 0 auto;
+   
+}
+
+
+.about-content img {
+    height: 250px;   
+    margin: 0 40px 0 230px;
+}
+
+.about-content p{
+    flex: 1;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;  
+}
+
+.about-content-two p {
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px 0;
+
+}
+
+.highlight {
+    color: blue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*-------------------------------------      CONTACT  PAGE    --------------------------------------------------------- */
+
+#content-wrapper {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.contact-title {
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.contact-container p {
+    margin: 0 auto;
+    width: 55%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    padding: 20px 0;
+}
+
+.contact-container a {
+    text-transform: lowercase;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+
+
+#location p {
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    background-color: blue;
+}
+
+#map iframe {
+    width: 100%;
+    height: 330px;
+}
+
+/*-----------------------------------------       PAYMENT PAGE    --------------------------------------------------------- */
+
+#payment-main{
+    margin-bottom: -80px;
+}
+
+
+#payment-section {
+     border-bottom: 5px solid lightslategray;
+     border-top: 5px solid lightslategray;
+     background-color: darkslategrey;
+     height: 400px;     
+} 
+
+.payment-img {
+margin-bottom: 50px;
+min-height: 400px;
+margin-top: -6px;   
+max-height: 470px;
+width: 100%;
+}
+
+/* image in header with title in it.  name different from other header images to have full function of the intentions of the image */
+.payment-img img {
+width: 100%;
+max-height: 450px;
+height: 370px;  
+}
+
+
+#payment-section .container {
+    display: flex;
+    padding: 10px;
+    max-width: 1400px;
+    margin: 30px auto 0 auto;  
+}
+
+.payment-box:nth-child(1) {
+cursor: pointer;
+height: 350px;
+max-height: 270px;
+width: 400px;
+background-color: darkslategrey;
+color: white;
+padding: 12px;
+font-size: 16px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.payment-box:nth-child(2) {
+    cursor: pointer;
+    height: 350px;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin: 100px auto auto auto; 
+}
+
+
+.payment-box:nth-child(3) {
+    height: 180px;
+    width: 180px;
+    margin-left: 150px;
+    margin: 0 auto 0 auto;
+}
+
+
+/* ----------------------------------------------     paypal properties    ------------------------------------------------------- */
+
+/* reference make a payment and dollar amount section */
+
+
+#smart-button-container img{
+    width: 100%;
+    height: 45px;
+    padding: 0 0 10px 0;   
+} 
+
+
+.first-row{
+     display: flex;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-field{
+    border: 1px solid #999;
+}
+
+.input-field input{
+    width: 100%;
+    border:none;
+    outline: none;
+    padding: 10px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select{
+    padding: 10px 20px;
+}
+
+a{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: transparent;
+}
+
+.cards img{
+    width: 100px;
+}
+/*-----------------------------------------     PAY PAL PROPERTIES END HERE    -----------------------------------------------*/
+
+/*---------------------------------------------    RESIDENTIAL PAGE   -------------------------------------------------------- */
+
+#residential-wrapper {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+#residential-wrapper h1 {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    padding: 0 0 10px 0;
+}
+
+.residential-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto 0 auto;
+}
+
+.residential-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;     
+    width: 550px;
+    margin: 0 50px 0 0;
+}
+
+.residential-content img {
+    width: 650px;
+    height: 250px;
+}
+
+/*---------------------------------------    commercial page    ---------------------------------------- */
+
+
+#commercial-main {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.commercial-wrapper {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto 0 auto;
+    padding: 10px 0;
+    border-bottom: 2px solid blue;
+}
+
+
+#commercial-content h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+    text-decoration: underline;
+    padding: 0 0 10px 0;
+    margin-top: 10px    
+}
+
+.box-one p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;     
+    width: 550px;
+    margin: 0 50px 0 60px;
+    color: black;
+    padding: 5px;
+}
+
+.box-one img {
+    width: 650px;
+    height: 370px;
+}
+
+/* reference second box of commercial repair using flexbox */
+
+
+#commercial-content-two {
+    background-color:darkslategray;
+    padding-bottom: 15px;
+}
+.commercial-wrapper-two {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto 0 auto;    
+}
+
+
+#commercial-content-two h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+    padding: 10px 0 10px 0;
+    margin-top: 10px;
+    
+}
+
+
+.box-two p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;     
+    width: 570px;
+    margin: 0 0 0 50px;
+    background-color:darkslategray;
+    color: white;
+    padding: 5px;
+}
+
+.box-two img {
+    width: 550px;
+    height: 250px;
+    margin: 0 0 0 60px;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+
+/*--------------------------------------   references footter -----------------------------------------*/
+
+#footer {    
+    background: url(images/footer-img.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+
+.home-container {
+    border-bottom: 1px solid blue;
+}
+
+
+#footer .footer-form {
+    position: absolute;
+    top: 248px;
+    left: 200px;
+    height: 120px;
+    color: #ffffff;
+    background-color: none;
+    padding: 10px 10px 10px 10px;   
+}
+
+/*reference the text and text area*/
+.footer-form input, .footer-form textarea {
+    display: block;
+    width: 90%;
+    padding: 5px;
+    height: 25px;
+}
+
+.btn-footer-send {
+    color: #ffffff;
+    background-color: blue;
+    display: block;
+    width: 93%;
+    text-transform: uppercase;
+    height: 32px;
+    
+}
+.footer-form h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-hours {
+    position: absolute;
+    top: 270px;
+    right: 685px;
+    color: white;    
+    margin: 0 auto;
+}
+
+.footer-hours p {
+    padding: 10px;
+}
+
+.footer-contact {
+    position: absolute;
+    top: 270px;
+    right: 200px;
+    color: white;    
+    text-align: right;
+    margin: 10px 0 0 0;
+}
+
+.footer-contact p {
+    padding: 10px 0 0 0;
+}
+
+.footer-contact .fa {
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.footer-border {
+      margin-top: -2px;
+        width: 100%;   
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: lightsteelblue;
+    width: 100%;
+    color: black;
+    font-weight: bold;  
+}
+
+/*-------------------------------------------------    END OF FOOTER    -----------------------------------------------------*/
+
+
+
+/*-----------------------------------------------    RESPONSIVE PROPERTIES    ------------------------------------------------*/
+
+/*------------------------------------------------   INDEX PAGE    -----------------------------------------------------------*/
+
+@media(max-width: 1250px) {
+
+    nav ul li, nav ul li a {
+        display: contents;
+        list-style: none;
+        float: none;
+        text-align: center;
+        width: 100%;        
+        font-size: 12px;        
+    }
+
+    .logo-one, .logo-two, h1,
+    .logo-container, .logo-two p, strong {
+         display: contents;
+        list-style: none;
+        float: none;
+        text-align: center;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    
+    .logo-one strong, .logo-one .highlight {
+        font-size: 35px;
+    }
+
+    
+    /* references the phone number at top of page */
+ .logo-two p {
+    font-size: 20px;
+}
+
+
+.logo-two .highlight {
+    font-size: 20px;
+} 
+    
+
+    .roof-img {
+        display: none;
+    }
+
+    .roof-btn, .roof-btn a  {
+       
+       display: none;
+    }
+
+    .roof-paragraph, p {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner-section, .banner-section img {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+    }
+
+    
+.content-highlight  {
+    display: block;
+    margin-top: 50px;
+    padding-bottom: 5px;    
+}
+
+  .email-highlight a  {
+  display:block
+  }
+
+    .inquiry, .inquiry input,
+    .btn-send {
+        width: 100%;
+        list-style: none;       
+    }
+
+    .inquiry input {
+        margin: 0 1px;
+    }
+
+    .home-wrapper, .home-content,
+    .home-content:nth-child(2)
+     {
+       display:contents;
+       width: 100%;       
+       text-align: center;
+   font-size: 12px;
+    }
+
+    .home-content img, .home-content p
+    {
+         width: 100%;
+       padding: 10px 15px;
+       text-align: center;
+       font-size: 18px;
+    }
+
+     .home-title h1 {
+         text-align: center;
+         padding: 10px 15px;
+         font-size: 15px;
+         margin-left: 10px;
+     }
+
+     .home-container {
+        text-align: center;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+
+/* reference the two paragraphs to line them up for a better view */
+.roof-paragraph {
+    max-width: 480px;
+    max-height: 100px;
+}
+
+
+#footer {
+    background: url();
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 10px 0;
+}
+
+#footer .footer-form {
+    display: contents;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+}  
+
+
+/*reference the text and text area*/
+.footer-form input, .footer-form textarea {
+    display: block;
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto;
+}                                        
+
+.btn-footer-send {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-form h3 {
+    margin: 15px 0 0 0;
+    background-color: blue;
+}
+
+.footer-contact {
+    color: white;
+    display: contents;
+    font-size: 20px;
+    text-align: center;
+    background-color: blue;
+}
+
+.footer-contact p {
+    background-color:blue;              
+}
+
+.footer-contact h3 {
+    font-size: 30px;
+    margin: 25px 0 0 0;
+    background-color: blue;
+
+}
+
+.footer-hours {
+    width: 100%;
+    display: contents;
+    font-size: 20px;
+    text-align: center;
+    background-color: blue;
+
+}
+
+.footer-hours p {
+    background-color: blue;
+    color: white;
+}
+
+.footer-hours h3 {
+    font-size: 30px;
+    margin: 40px 0 10px 0;
+    background-color: blue;
+}
+
+.footer-contact h3 {
+    background-color: blue;
+
+}
+
+.footer-border {
+    display: none;
+}
+
+
+/*-----------------------------------------------ABOUT US PAGE  ---------------------------------------------------------------
+ */
+
+ #aboutus-main p{
+    font-size: 25px;
+}
+
+#aboutus-main h1{
+    font-size: 45px;
+} 
+
+
+.logo-one {
+    display: block;
+    font-size: 10px;
+    margin-bottom: -210px;
+    }
+
+  
+#aboutus-content{
+    margin-top: -220px;
+}
+.about-title h1 {
+    font-size: 30px;
+    display: block;
+    text-decoration: underline;
+ }
+
+.about-img img {
+    display: none;
+}
+
+.about-content img {
+    width: 100%;
+}
+
+#aboutus-content p, .about-wrapper 
+  {
+    width: 100%;
+    display: contents;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.about-content img {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.about-content-two, .about-content {
+    padding: 12px 0 ;
+}
+
+
+
+/* ------------------------------------------     Residential Page   ------------------------------------------------*/
+
+#residential-wrapper h1 {
+    font-size: 20px;
+    color: blue;  
+    display: block;  
+}
+
+.residential-container {
+    display: contents;
+    width: 100%;
+}
+ .residential-content p {
+     font-size: 18px;
+     padding-bottom: 10px;
+ }
+
+ /*------------------------------------------------     COMMERCIAL PAGE     ------------------------------------------------*/
+
+ 
+.commercial-wrapper {
+    display: block;
+    width: 100%
+}
+
+.commercial-wrapper-two {
+    display: block;
+    width: 100%;    
+}
+
+#commercial-content h1 {
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+}
+
+#commercial-content p {
+    font-size: 18px;
+    width: 80%;
+}
+
+.box-one img {
+    padding: 5px 0;
+    margin-left: 60px;
+    width: 85%;
+}
+
+.box-two img, .box-two p {
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+    font-size: 18px;
+}
+ 
+
+
+/*-----------------------------------------------------     PAYMENT PAGE    ----------------------------------------------------*/
+
+
+/*--- payment page---- */
+
+.payment-img img {
+    display: none;
+}
+
+.payment-img,
+#payment-section .container {
+    display: contents;
+    width: 95%;
+    list-style: none;
+    border: none;
+    display: block;
+    margin-bottom: -290px;
+}
+
+
+#payment-section {
+    margin-bottom: 300px;
+}
+
+.payment-box {
+padding: 65px 0;  
+}
+
+.payment-box:nth-child(1) 
+{
+
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    padding: 5px 5px;
+
+}
+
+
+
+
+/* resizes the 3rd child image */
+.payment-box img 
+{
+width: 100px;
+overflow: hidden;
+}
+
+
+
+.payment-box:nth-child(2) {
+    margin-bottom: -290px;
+}
+
+/* moves the form down */
+.payment-box:nth-child(3) {
+    display: block;
+    width: 100px;
+    margin-top: 30px;
+}
+
+/*---------------------------------------------------    CONTACT PAGE    ---------------------------------------------------------*/
+
+.contact-title h1 {
+    color: blue;
+    font-size: 20px;
+}
+
+.contact-container p {
+    width: 100%;
+
+}
+
+}
